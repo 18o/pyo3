@@ -1,6 +1,6 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1646172784653,
-  "repoUrl": "https://github.com/PyO3/pyo3",
+  "lastUpdate": 1683545209097,
+  "repoUrl": "https://github.com/18o/pyo3",
   "entries": {
     "pyo3-bench": [
       {
@@ -55949,6 +55949,216 @@ window.BENCHMARK_DATA = {
             "name": "tuple_get_item_unchecked",
             "value": 688033,
             "range": "± 6299",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "26634292+bors[bot]@users.noreply.github.com",
+            "name": "bors[bot]",
+            "username": "bors[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8ab3f5fc472d42355304c204c6be17487fb9a0dc",
+          "message": "Merge #3141\n\n3141: Add BaseExceptionGroup for Python >= 3.11 r=adamreichold a=adriangb\n\nNot sure if this is totally off base, but it looks like it may be this easy to add support for ExceptionGroup?\n\nCo-authored-by: Adrian Garcia Badaracco <1755071+adriangb@users.noreply.github.com>",
+          "timestamp": "2023-05-08T08:39:21Z",
+          "tree_id": "c06e6f8d5ac330c01921c19a75cd6733d49a4680",
+          "url": "https://github.com/18o/pyo3/commit/8ab3f5fc472d42355304c204c6be17487fb9a0dc"
+        },
+        "date": 1683545170468,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "call_0",
+            "value": 53099,
+            "range": "± 1297",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "call_method_0",
+            "value": 151537,
+            "range": "± 6858",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_dict",
+            "value": 3016566,
+            "range": "± 17327",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dict_new",
+            "value": 4357925,
+            "range": "± 111122",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dict_get_item",
+            "value": 2901534,
+            "range": "± 25581",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashmap",
+            "value": 8883991,
+            "range": "± 634394",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_btreemap",
+            "value": 13739179,
+            "range": "± 123870",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashbrown_map",
+            "value": 8730999,
+            "range": "± 471075",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "mapping_from_dict",
+            "value": 2,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "clean_gilpool_new",
+            "value": 16,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "clean_acquire_gil",
+            "value": 112,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dirty_acquire_gil",
+            "value": 117,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_list",
+            "value": 2035090,
+            "range": "± 33135",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_new",
+            "value": 1222427,
+            "range": "± 129094",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_get_item",
+            "value": 1175229,
+            "range": "± 19677",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_get_item_unchecked",
+            "value": 1029449,
+            "range": "± 23638",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "sequence_from_list",
+            "value": 2,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "first_time_init",
+            "value": 3543,
+            "range": "± 49",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "drop_many_objects",
+            "value": 6234,
+            "range": "± 72",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "set_new",
+            "value": 1841003,
+            "range": "± 20997",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_set",
+            "value": 2567624,
+            "range": "± 13243",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashset",
+            "value": 9956830,
+            "range": "± 68655",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_btreeset",
+            "value": 4033865,
+            "range": "± 19493",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashbrown_set",
+            "value": 7017451,
+            "range": "± 45193",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_tuple",
+            "value": 1578274,
+            "range": "± 2446",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_new",
+            "value": 1237839,
+            "range": "± 73357",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_get_item",
+            "value": 914889,
+            "range": "± 6184",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_get_item_unchecked",
+            "value": 865331,
+            "range": "± 7291",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "sequence_from_tuple",
+            "value": 2,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_new_list",
+            "value": 235985,
+            "range": "± 1916",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_to_list",
+            "value": 152395,
+            "range": "± 328",
             "unit": "ns/iter"
           }
         ]
